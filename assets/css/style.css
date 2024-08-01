@@ -2,5 +2,39 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: white;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header-container {
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.header-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-navbar {
+  width: 50%;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me {
+  background-color: lightgreen;
+}
+
+.projects {
+  background-color: lightpink;
 }
