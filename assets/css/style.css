@@ -9,32 +9,69 @@ ul {
   list-style-type: none;
 }
 
-.header-container {
-  background-color: lightblue;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100px;
+li {
+  margin-bottom: 10px;
 }
 
-.header-title {
+li:last-of-type {
+  margin-bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-container {
+  background-color: lightblue;
+  border: 2px solid black;
+  margin: 50px;
   display: flex;
-  flex-direction: column;
+}
+
+.header-container {
+  background-color: lightcoral;
+  width: 30%;
+  padding: 5px;
+}
+
+.iframe-container {
+  background-color: lightgreen;
+  width: 70%;
+  padding: 5px;
 }
 
 .header-navbar {
-  width: 50%;
+  margin-top: 50px;
+}
+
+/* OLD VERSION
+.header-container {
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.header-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-navbar {
+    width: 50%;
 }
 
 .header-list {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 .about-me {
-  background-color: lightgreen;
+    background-color: lightgreen;
 }
 
 .projects {
-  background-color: lightpink;
+    background-color: lightpink;
 }
+ */

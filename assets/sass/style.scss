@@ -1,5 +1,29 @@
 @use 'base';
 
+.main-container {
+    background-color: lightblue;
+    border: 2px solid black;
+    margin: 50px;
+    display: flex;
+}
+
+.header-container {
+    background-color: lightcoral;
+    width: 30%;
+    padding: 5px;
+}
+
+.iframe-container {
+    background-color: lightgreen;
+    width: 70%;    
+    padding: 5px;
+}
+
+.header-navbar {
+    margin-top: 50px;
+}
+
+/* OLD VERSION
 .header-container {
     background-color: lightblue;
     display: flex;
@@ -29,3 +53,4 @@
 .projects {
     background-color: lightpink;
 }
+ */
