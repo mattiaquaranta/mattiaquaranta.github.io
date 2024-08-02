@@ -5,71 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/style.css">
-    <title>Document</title>
+    <title>Mattia Quaranta</title>
 </head>
 
 <body>
-    <!-- OLD VERSION
-     <header class="header-container">
-        <div class="header-title">
-            <h1>Mattia Quaranta</h1>
-            <p>Web Developer</p>
-        </div>
-        <nav class="header-navbar">
-            <ul class="header-list">
-                <li>
-                    <a href="#about-me">La mia storia</a>
-                </li>
-                <li>
-                    <a href="#projects">Progetti</a>
-                </li>
-                <li>
-                    <a href="#contacts">Contatti</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <article class="about-me" id="about-me">
-        <h2>La mia storia</h2>
-        <p>tutta una serie di cose scritte giusto per fare spazio</p>
-    </article>
-
-    <article class="projects" id="projects">
-        <h2>Progetti</h2>
-        <p>tanti bellissimi progetti che proprio aspettta di vedere quanto sono belli bellissimi</p>
-    </article>
-    -->
-
     <div class="main-container">
-        <div class="header-container">
-            <header>
-                <div class="header-title">
-                    <a href="waiting-page.html" target="main-frame">
-                        <h1>Mattia Quaranta</h1>
-                    </a>
-                    <p>Web Developer</p>
-                </div>
-                <nav class="header-navbar">
-                    <ul>
-                        <li>
-                            <a href="about-me.html" target="main-frame">La mia storia</a>
-                        </li>
-                        <li>
-                            <a href="project.html" target="main-frame">Progetti</a>
-                        </li>
-                        <li>
-                            <a href="contacts.html" target="main-frame">Contatti</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+        <header class="header-container">
+            <div class="header-title">
+                <a href="waiting-page.html" target="main-frame">
+                    <h1>Mattia Quaranta</h1>
+                </a>
+                <p>Web Developer</p>
+            </div>
+            <div class="header-social">
+                <a href="https://www.linkedin.com/in/mattia-quaranta-0b92a52aa/" target="_blank">
+                    <img src="/assets/img/linkedin.svg" alt="linkedin logo">
+                </a>
+                <a href="https://github.com/mattiaquaranta" target="_blank">
+                    <img src="/assets/img/github.svg" alt="github logo">
+                </a>
+            </div>
+        </header>
+
+        <div class="body-container">
+            <nav class="navbar-container">
+                <ul>
+                    <li>
+                        <a href="about-me.html" target="main-frame">La mia storia</a>
+                    </li>
+                    <li>
+                        <a href="project.html" target="main-frame">Progetti</a>
+                    </li>
+                    <li>
+                        <a href="contacts.html" target="main-frame">Contatti</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="iframe-container">
+                <iframe src="waiting-page.html" name="main-frame" frameborder="0">
+                </iframe>
+            </div>
         </div>
-        <div class="iframe-container">
-            <iframe src="waiting-page.html" name="main-frame" frameborder="0">
-                iframe
-            </iframe>
-        </div>
+
+
+
     </div>
 
 </body>
