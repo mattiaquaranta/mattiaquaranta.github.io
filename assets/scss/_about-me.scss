@@ -1,0 +1,25 @@
+body {
+    font-family: $secondary-font;
+}
+
+.chapter-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.before-title,
+.after-title {
+    border-top: 2px outset white;
+    width: 100%;
+    position: relative;
+    top: 18px;
+    margin: 0 10px;
+}
+
+.chapter-title {
+    width: auto;
+
+    p{
+        font-size: 30px;
+    }
+}

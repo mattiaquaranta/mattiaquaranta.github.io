@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('/assets/font/Quicksand-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/assets/font/Lato-Regular.ttf');
+}
+
+$primary-font: Quicksand;
+$secondary-font: Lato;

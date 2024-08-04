@@ -9,26 +9,26 @@
 </head>
 
 <body>
-</body>
-<form action="" class="contacts-form">
-    <div class="form-row first-row">
-        <div class="form-cell">
-            <label for="full-name">Nome</label>
-            <input type="text" id="full-name">
+    <form action="" class="contacts-form">
+        <div class="form-row first-row">
+            <div class="form-cell">
+                <label for="full-name">Nome</label>
+                <input type="text" id="full-name" required>
+            </div>
+            <div class="form-cell">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="mario.rossi@gmail.com" required>
+            </div>
         </div>
-        <div class="form-cell">
-            <label for="email">Email</label>
-            <input type="email" id="email">
+        <div class="form-row">
+            <label for="full-name">Messaggio</label>
+            <textarea name="message" id="message" required></textarea>
         </div>
-    </div>
-    <div class="form-row">
-        <label for="full-name">Messaggio</label>
-        <textarea name="message" id="message"></textarea>
-    </div>
-    <div class="submit-row">
-        <button>Invia</button>
-    </div>
+        <div class="submit-row">
+            <button>Invia</button>
+        </div>
 
-</form>
+    </form>
+</body>
 
 </html>

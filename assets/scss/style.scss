@@ -1,0 +1,73 @@
+@import 'config';
+@import 'base';
+@import 'form';
+@import 'about-me.scss';
+
+.main-container {
+    border: 2px solid black;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    bottom: 50px;
+    left: 50px;    
+}
+
+
+.header-container {
+    display: flex;
+    height: 20%;
+    font-family: $primary-font;
+    padding: 25px;
+}
+
+.header-title {
+    /*background-color: lightcoral;*/
+    display: flex;
+    flex-direction: column;  
+    align-items: start;
+    width: 30%;
+}
+
+.header-social {
+    /*background-color: lightblue;*/
+    display: flex;    
+    justify-content: flex-end;
+    align-items: start;
+    width: 70%;
+    
+    a {
+        margin-right: 15px;
+    }
+
+    a:last-of-type {
+        margin-right: 0px;
+    }
+
+    img {
+        width: 30px;
+    }
+
+    .linkedin-logo {
+        border-radius: 3px;
+    }
+
+}
+
+
+.body-container {
+    display: flex;
+    height: 80%;
+    font-family: $secondary-font;
+    padding: 25px;
+}
+
+.navbar-container {
+    /*background-color: lightblue;*/
+    width: 30%;
+}
+
+.iframe-container {
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    width: 70%;
+}
