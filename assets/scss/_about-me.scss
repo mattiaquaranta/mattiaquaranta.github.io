@@ -4,22 +4,46 @@ body {
 
 .chapter-container {
     display: flex;
-    justify-content: space-between;
-}
+    flex-direction: column;
+    margin-bottom: 10px;
 
-.before-title,
-.after-title {
-    border-top: 2px outset white;
-    width: 100%;
-    position: relative;
-    top: 18px;
-    margin: 0 10px;
-}
-
-.chapter-title {
-    width: auto;
-
-    p{
-        font-size: 30px;
+    &:last-of-type {
+        margin-bottom: 0px;
     }
+
+    .chapter-title-container {
+        display: flex;
+        justify-content: space-between;
+    
+        .before-title,
+        .after-title {
+            border-top: 2px solid white;
+            width: 100%;
+            position: relative;
+            top: 18px;
+            margin: 0 10px;
+        }
+    
+        .chapter-title {
+            width: auto;
+            color: white;
+    
+            p{
+                font-size: 30px;
+            }
+        }
+    }
+
+    .chapter-body-container {
+        margin: 5px 10px;
+
+        p {
+            color: black;
+            line-height: 1.8em;
+        }
+    }
+
 }
+
+
+
