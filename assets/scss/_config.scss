@@ -6,6 +6,15 @@
 @font-face {
     font-family: 'Lato';
     src: url('/assets/font/Lato-Regular.ttf');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/assets/font/Lato-Bold.ttf');
+    font-style: normal;
+    font-weight: 700;
 }
 
 $primary-font: Quicksand;
