@@ -106,7 +106,7 @@ iframe {
   width: 30px;
 }
 .main-page .main-container .header-container .header-social .linkedin-logo {
-  border-radius: 3px;
+  border-radius: 15px;
 }
 .main-page .body-container {
   display: flex;
@@ -122,20 +122,6 @@ iframe {
 }
 .main-page .body-container .navbar-container ul li {
   margin-bottom: 40px;
-}
-.main-page .body-container .navbar-container ul li a {
-  border-radius: 50px;
-  transition: background-color 0.5s, padding 0.5s, border-radius 0.5s;
-}
-.main-page .body-container .navbar-container ul li a:hover {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 10px 40px;
-  border-radius: 50px;
-}
-.main-page .body-container .navbar-container ul li a:active {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 10px 40px;
-  border-radius: 50px;
 }
 .main-page .body-container .navbar-container ul li:last-of-type {
   margin-bottom: 0px;
@@ -177,16 +163,16 @@ iframe {
   line-height: 1.8em;
 }
 
-.form-row {
+.contacts-form .form-row {
   display: flex;
   flex-direction: column;
   margin: 0 10px 40px 10px;
 }
-.form-row label {
+.contacts-form .form-row label {
   margin-bottom: 15px;
 }
-.form-row input[type=text],
-.form-row input[type=email] {
+.contacts-form .form-row input[type=text],
+.contacts-form .form-row input[type=email] {
   border: 1px solid #D6D9DC;
   border-radius: 3px;
   width: 100%;
@@ -194,7 +180,7 @@ iframe {
   font-size: 16px;
   color: black;
 }
-.form-row textarea {
+.contacts-form .form-row textarea {
   border: 1px solid #D6D9DC;
   border-radius: 3px;
   width: 100%;
@@ -204,43 +190,41 @@ iframe {
   min-height: 150px;
   resize: none;
 }
-.form-row textarea::-webkit-scrollbar {
+.contacts-form .form-row textarea::-webkit-scrollbar {
   width: 12px;
 }
-.form-row textarea::-webkit-scrollbar-thumb {
+.contacts-form .form-row textarea::-webkit-scrollbar-thumb {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
-.form-row textarea::-webkit-scrollbar-track {
+.contacts-form .form-row textarea::-webkit-scrollbar-track {
   background-color: #f1f1f1;
 }
-.form-row textarea::-webkit-scrollbar-thumb:hover {
+.contacts-form .form-row textarea::-webkit-scrollbar-thumb:hover {
   background-color: rgba(0, 0, 0, 0.4);
   cursor: context-menu;
 }
-.form-row textarea::-webkit-scrollbar-thumb:active {
+.contacts-form .form-row textarea::-webkit-scrollbar-thumb:active {
   background-color: rgba(0, 0, 0, 0.6);
 }
-
-.first-row {
+.contacts-form .first-row {
   display: flex;
   flex-direction: row;
 }
-.first-row .form-cell {
+.contacts-form .first-row .form-cell {
   display: flex;
   flex-direction: column;
   width: 50%;
   margin-right: 10px;
 }
-.first-row .form-cell:last-of-type {
+.contacts-form .first-row .form-cell:last-of-type {
   margin-right: 0;
 }
-
-.submit-row {
+.contacts-form .submit-row {
   display: flex;
   justify-content: center;
 }
-.submit-row button {
+.contacts-form .submit-row button {
   font-size: 16px;
   font-weight: bold;
   color: #000055;
@@ -250,9 +234,13 @@ iframe {
   cursor: pointer;
   transition: color 0.5s, background-color 0.5s;
 }
-.submit-row button:hover {
+.contacts-form .submit-row button:hover {
   color: #08f7a1;
   background-color: #000055;
+}
+
+.contacts-social {
+  display: none;
 }
 
 .project-main-container {
@@ -314,4 +302,118 @@ iframe {
 }
 .project-main-container .single-project-container .project-info:hover {
   opacity: 1;
+}
+
+@media only screen and (max-width: 500px) {
+  html::-webkit-scrollbar {
+    width: 0;
+  }
+  .main-page {
+    background-image: radial-gradient(ellipse at 50% 50%, #08f7a1, #000055 100%);
+  }
+  .main-page .main-container {
+    top: 25px;
+    right: 25px;
+    bottom: 25px;
+    left: 25px;
+  }
+  .main-page .main-container .header-container {
+    padding: 10px;
+    height: 15%;
+  }
+  .main-page .main-container .header-container .header-title {
+    width: 100%;
+    align-items: center;
+  }
+  .main-page .main-container .header-container .header-title h1 {
+    font-size: 30px;
+  }
+  .main-page .main-container .header-container .header-title p {
+    font-size: 15px;
+  }
+  .main-page .main-container .header-container .header-social {
+    display: none;
+  }
+  .main-page .main-container .body-container {
+    flex-direction: column;
+    padding: 10px;
+    height: 85%;
+  }
+  .main-page .main-container .body-container .navbar-container {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .main-page .main-container .body-container .navbar-container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 10px;
+    border-radius: 20px;
+  }
+  .main-page .main-container .body-container .navbar-container ul li {
+    margin-bottom: 0px;
+  }
+  .main-page .main-container .body-container .iframe-container {
+    width: 100%;
+    height: 100%;
+  }
+  .contacts-form {
+    margin-bottom: 60px;
+  }
+  .contacts-form .first-row {
+    flex-direction: column;
+  }
+  .contacts-form .first-row .form-cell {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .contacts-form .form-row {
+    margin-bottom: 15px;
+  }
+  .contacts-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .contacts-social img {
+    width: 30px;
+  }
+  .contacts-social .linkedin-logo {
+    border-radius: 15px;
+    margin-right: 10px;
+  }
+  .project-main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-main-container .single-project-container {
+    width: 225px;
+    height: 150px;
+    margin: 0 0 10px 0;
+  }
+  .project-main-container .single-project-container .thumbnail img {
+    width: 225px;
+    height: 150px;
+  }
+  .project-main-container .single-project-container .project-info {
+    width: 225px;
+    height: 150px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-page .body-container .navbar-container ul li a {
+    border-radius: 50px;
+    transition: background-color 0.5s, padding 0.5s, border-radius 0.5s;
+  }
+  .main-page .body-container .navbar-container ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 40px;
+    border-radius: 50px;
+  }
+  .main-page .body-container .navbar-container ul li a:active {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px 40px;
+    border-radius: 50px;
+  }
 }

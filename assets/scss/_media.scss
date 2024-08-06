@@ -1,0 +1,151 @@
+@media only screen and (max-width: 500px) {
+    
+    html::-webkit-scrollbar {
+        width: 0;     
+    }
+    
+    .main-page {
+        background-image: radial-gradient(ellipse at 50% 50%, #08f7a1, #000055 100%);
+
+        .main-container {
+            top: 25px;
+            right: 25px;
+            bottom: 25px;
+            left: 25px;
+
+            .header-container {
+                padding: 10px;
+                height: 15%;
+
+                .header-title {
+                    width: 100%;
+                    align-items: center;
+
+                    h1 {
+                        font-size: 30px;
+                    }
+                    
+                    p {
+                        font-size: 15px;
+                    }
+                }
+
+                .header-social {
+                    display: none;
+                }
+            }
+
+            .body-container {
+                flex-direction: column;
+                padding: 10px;
+                height: 85%;
+
+                .navbar-container {
+                    width: 100%;
+                    margin-bottom: 10px;
+
+                    ul {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        background-color: rgba(0, 0, 0, 0.2);
+                        padding: 10px 10px;
+                        border-radius: 20px;
+
+                        li {
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+
+                .iframe-container {
+                    width: 100%;
+                    height: 100%;
+                }
+            }  
+        }
+    }
+
+    .contacts-form {
+        margin-bottom: 60px;
+
+        .first-row {
+            flex-direction: column;
+    
+            .form-cell {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+    
+        .form-row {
+            margin-bottom: 15px;
+        }
+    }
+
+    .contacts-social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        img {
+            width: 30px;
+        }
+    
+        .linkedin-logo {
+            border-radius: 15px;
+            margin-right: 10px;
+        }
+    }
+
+    .project-main-container {
+        flex-direction: column;
+        align-items: center;
+
+        .single-project-container {
+            width: 225px;  
+            height: 150px;
+            margin: 0 0 10px 0; 
+
+            .thumbnail img {
+                width: 225px;  
+                height: 150px;
+            }
+
+            .project-info {
+                width: 225px;  
+                height: 150px;
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .main-page {
+        .body-container {
+            .navbar-container {
+                ul {
+                    li {
+                        a {
+                            border-radius: 50px;
+                            transition: background-color .5s, padding .5s, border-radius .5s;
+            
+                            &:hover {
+                                background-color: rgba(0, 0, 0, 0.4);
+                                padding: 10px 40px;
+                                border-radius: 50px;
+                            }
+            
+                            &:active {
+                                background-color: rgba(0, 0, 0, 0.6);
+                                padding: 10px 40px;
+                                border-radius: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
