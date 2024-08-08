@@ -178,10 +178,12 @@
             right: 25px;
             bottom: 25px;
             left: 25px;
+            padding: 10px;
 
             .header-container {
                 padding: 10px;
                 height: 15%;
+                margin-bottom: 10px;
 
                 .header-title {
                     width: 100%;
@@ -232,6 +234,28 @@
             }  
         }
     } 
+
+    .project-main-container {
+        flex-direction: column;
+        align-items: center;
+
+        .single-project-container {
+            width: 225px;  
+            height: 150px;
+            margin: 0 0 10px 0; 
+
+            .thumbnail img {
+                width: 225px;  
+                height: 150px;
+            }
+
+            .project-info {
+                width: 225px;  
+                height: 150px;
+            }
+
+        }
+    }
 }
 
 @media only screen and (min-width: 1024px) {
