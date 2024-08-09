@@ -1,4 +1,6 @@
 .contacts-form {
+    margin-bottom: 60px;
+    
     .form-row {
         display: flex;
         flex-direction: column;
@@ -91,5 +93,16 @@
 }
 
 .contacts-social {
-    display: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+        width: 30px;
+    }
+
+    .linkedin-logo {
+        border-radius: 15px;
+        margin-right: 10px;
+    }
 }
