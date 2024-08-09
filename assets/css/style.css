@@ -167,6 +167,7 @@ iframe {
   padding: 7px;
   font-size: 16px;
   color: black;
+  font-family: Lato;
 }
 .contacts-form .form-row textarea {
   border: 1px solid #D6D9DC;
@@ -177,6 +178,7 @@ iframe {
   color: black;
   min-height: 150px;
   resize: none;
+  font-family: Lato;
 }
 .contacts-form .form-row textarea::-webkit-scrollbar {
   width: 12px;
